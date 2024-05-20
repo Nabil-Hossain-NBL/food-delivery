@@ -5,7 +5,11 @@ import appStore from "./assets/app-store.svg";
 import googlePlay from "./assets/google-play.svg";
 import food1 from "./assets/food1.png";
 import food2 from "./assets/food2.png";
+import pasta from "./assets/pasta.png";
+import salad from "./assets/salad.png";
+import dessert from "./assets/dessert.png";
 import bike from "./assets/bike.svg";
+import blackQuote from "./assets/black-quote.svg";
 import "./App.css";
 
 function App() {
@@ -110,25 +114,25 @@ function App() {
         <div className="food-bottom">
           <div className="food-card">
             <div className="food-img">
-              <img src={logo} alt="" />
+              <img src={dessert} alt="" />
             </div>
-            Pizza
+            Dessert
           </div>
           <div className="food-card">
             <div className="food-img">
-              <img src={food1} alt="" />
+              <img src={salad} alt="" />
             </div>
-            Burger
+            Salad
           </div>
           <div className="food-card">
             <div className="food-img">
-              <img src={food2} alt="" />
+              <img src={pasta} alt="" />
             </div>
-            Sushi
+            Pasta
           </div>
           <div className="food-card-left">
             <div className="food-left-icon">
-              <img src={bike} alt="" />
+              <img src={blackQuote} alt="" />
             </div>
             “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.”
@@ -138,6 +142,42 @@ function App() {
 
       <section className="how-to-order">
         <h1>How To Order?</h1>
+        <div className="order-container">
+          <div className="options">
+            <h1>01</h1>
+            <div className="option-card">
+              <div>
+                <img src={food1} alt="" />
+              </div>
+              Choose your location
+            </div>
+          </div>
+          <div className="options">
+            <h1>01</h1>
+            <div className="option-card">
+              <div>
+                <img src={food1} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="options">
+            <h1>01</h1>
+            <div className="option-card">
+              <div>
+                <img src={food1} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="options">
+            <h1>01</h1>
+            <div className="option-card">
+              <div>
+                <img src={food1} alt="" />
+              </div>
+              Choose your location
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

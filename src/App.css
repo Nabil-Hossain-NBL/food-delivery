@@ -173,10 +173,10 @@ body, html {
 }
 
 .food{
-  margin: auto;
-  width: 70%;
   display: flex;
+  flex-direction: row;
   justify-content: end;
+  align-items: flex-start;
   gap: 35px;
 }
 
@@ -189,6 +189,7 @@ body, html {
   border-radius: 30px;
   font: bolder;
   font-weight: 500;
+  flex-grow: 0;
 }
 .food-img{
   background-color: #fff;
@@ -240,6 +241,34 @@ body, html {
 .food-left-icon{
   display: flex;
   justify-content: start;
+  margin-bottom: 20px;
+}
+
+.how-to-order{
+  margin: 60px 0;
+  text-align: center;
+}
+
+.order-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.option-card {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 34px 15px;
+  border-radius: 16px;
+  width: 60%;
+}
+
+.option-card div{
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 16px;
 }
 
 @media (max-width: 768px) {
