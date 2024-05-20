@@ -10,6 +10,12 @@ import salad from "./assets/salad.png";
 import dessert from "./assets/dessert.png";
 import bike from "./assets/bike.svg";
 import blackQuote from "./assets/black-quote.svg";
+import orangeQuote from "./assets/orange-quote.svg";
+import lolipop from "./assets/lolipop.png";
+import boy from "./assets/boy.png";
+import home from "./assets/home.png";
+import rightArrow from "./assets/right-arrow.svg";
+import leftArrow from "./assets/left-arrow.svg";
 import "./App.css";
 
 function App() {
@@ -147,35 +153,64 @@ function App() {
             <h1>01</h1>
             <div className="option-card">
               <div>
+                <img src={lolipop} alt="" />
+              </div>
+              Choose your location
+            </div>
+          </div>
+          <div className="options">
+            <h1>02</h1>
+            <div className="option-card">
+              <div>
+                <img src={boy} alt="" />
+              </div>
+              Choose your location
+            </div>
+          </div>
+          <div className="options">
+            <h1>03</h1>
+            <div className="option-card">
+              <div>
                 <img src={food1} alt="" />
               </div>
               Choose your location
             </div>
           </div>
           <div className="options">
-            <h1>01</h1>
+            <h1>04</h1>
             <div className="option-card">
               <div>
-                <img src={food1} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="options">
-            <h1>01</h1>
-            <div className="option-card">
-              <div>
-                <img src={food1} alt="" />
-              </div>
-            </div>
-          </div>
-          <div className="options">
-            <h1>01</h1>
-            <div className="option-card">
-              <div>
-                <img src={food1} alt="" />
+                <img src={home} alt="" />
               </div>
               Choose your location
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="feedback">
+        <div className="feedback-header">
+          <h1>Our Clients Feedback</h1>
+          <p>
+            The food at your doorstep. Why starve when you have us. You hunger{" "}
+            <br />
+            partner. Straight out of the oven to your doorstep.
+          </p>
+        </div>
+        <div className="feedback-card">
+          <img src={orangeQuote} alt="" />
+          <h3>
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi”
+          </h3>
+          <div>
+            <span>Mitchell Marsh</span>
+            <span>CEO, Bexon Agency</span>
+          </div>
+          <div>
+            <img src={leftArrow} alt="" />
+            <img src={rightArrow} alt="" />
           </div>
         </div>
       </section>
