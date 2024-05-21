@@ -102,7 +102,9 @@ body, html {
 .banner{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 80px;
+  margin: 80px auto;
+
+  width: 85%;
 }
 
 .banner-text {
@@ -443,6 +445,7 @@ color: #B5B2B2;
 
 .banner{
   flex-direction: column;
+  margin-top: 0;
 }
 
 .banner .banner-text{
