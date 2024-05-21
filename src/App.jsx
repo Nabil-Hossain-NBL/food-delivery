@@ -16,6 +16,7 @@ import boy from "./assets/boy.png";
 import home from "./assets/home.png";
 import rightArrow from "./assets/right-arrow.svg";
 import leftArrow from "./assets/left-arrow.svg";
+import downArrow from "./assets/down-arrow.svg";
 import "./App.css";
 
 function App() {
@@ -39,13 +40,14 @@ function App() {
           <a href="#">About</a>
           <div className="dropdown">
             <button type="drop" className="dropbtn">
-              Page{" "}
+              Page
             </button>
+            <img src={downArrow} alt="" />
 
             <div className="dropdown-content">
-              <a href="#">Page 1</a>
-              <a href="#">Page 2</a>
-              <a href="#">Page 3</a>
+              <a href="#">Chefs</a>
+              <a href="#">Contact</a>
+              <a href="#">Career</a>
             </div>
           </div>
         </div>
@@ -200,17 +202,96 @@ function App() {
         <div className="feedback-card">
           <img src={orangeQuote} alt="" />
           <h3>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi”
+            “I went there about three times.Food quality is good.The service
+            system of chillox is self service and the atmosphere is good
+            overall.Price is not so much and affordable.”
           </h3>
           <div>
-            <span>Mitchell Marsh</span>
-            <span>CEO, Bexon Agency</span>
+            <h4>Mitchell Marsh</h4>
+            <div>CEO, Bexon Agency</div>
           </div>
-          <div>
+          <div className="arrow">
             <img src={leftArrow} alt="" />
             <img src={rightArrow} alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section className="newsletter">
+        <div>
+          <h1>Subscribe our newsletter</h1>
+          <p>
+            Browse local restaurants and businesses for delivery by entering
+            your address blow.
+          </p>
+        </div>
+        <div className="input-div">
+          <input type="text" placeholder="Enter your email address..." />
+          <button className="signup-btn">Send</button>
+        </div>
+      </section>
+
+      <section className="footer">
+        <div className="footer-top">
+          <div className="footer-logo">
+            <a id="logo" href="/">
+              <img src={logo} alt="" />
+            </a>
+            <div className="banner-app">
+              <img src={appStore} alt="" />
+              <img src={googlePlay} alt="" />
+            </div>
+          </div>
+          <div>
+            <ul className="footer-list">
+              <li className="head">Quick links</li>
+
+              <li>Features</li>
+              <li>Food Menu</li>
+              <li>Offer</li>
+              <li>Review</li>
+              <li>Rider</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="footer-list">
+              <li className="head">Get to Know Us</li>
+
+              <li>Gift Cards</li>
+              <li>DoorDash Stories</li>
+              <li>LinkedIn</li>
+              <li>Glassdoor</li>
+              <li>Accessibility</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="footer-list">
+              <li className="head">News</li>
+
+              <li>Blog</li>
+              <li>FAQ</li>
+              <li>Lift Media</li>
+              <li>Press</li>
+              <li>Presse kit</li>
+            </ul>
+          </div>
+          <div>
+            <ul className="footer-list">
+              <li className="head">Contact</li>
+              <li>WhatsApp</li>
+              <li>Support 24</li>
+            </ul>
+          </div>
+        </div>
+        <div className="foter-bottom">
+          <div>© 2023 pizza.All right reserved</div>
+          <div>
+            <ul>
+              <li>Privacy</li>
+              <li>Policy</li>
+              <li>Terms</li>
+              <li>Services</li>
+            </ul>
           </div>
         </div>
       </section>

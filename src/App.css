@@ -1,7 +1,6 @@
 #root {
-  max-width: 1280px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 2rem;
 }
 
 body, html {
@@ -9,15 +8,15 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 20px;
+  padding: 10px 0;
   width: 100%;
-  
 }
 
 .navbar-logo a {
@@ -41,10 +40,13 @@ body, html {
   position: relative;
   display: inline-block;
 }
+.dropdown img{
+  margin: auto 0;
+}
 
 .navbar-menu .dropdown .dropbtn {
   background-color: #fff;
-  padding: 10px 15px;
+  padding: 10px 5px 10px 15px;
   font-size: 18px;
   border: none;
   cursor: pointer;
@@ -92,7 +94,7 @@ body, html {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  color: #fff;
+  color: black;
 }
 
 /* Banner */
@@ -100,7 +102,7 @@ body, html {
 .banner{
   display: flex;
   justify-content: space-between;
-  margin: 80px 0;
+  margin-bottom: 80px;
 }
 
 .banner-text {
@@ -173,6 +175,7 @@ body, html {
 }
 
 .food{
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -224,6 +227,7 @@ body, html {
 
 .food-bottom{
   margin-top: 20px;
+  margin-left: 60px;
   width: 70%;
   display: flex;
   flex-direction: row-reverse;
@@ -287,9 +291,123 @@ body, html {
   border-radius: 16px;
 }
 
+.feedback{
+  margin: auto;
+  width: 60%;
+  text-align: center;
+}
+
+.feedback-card{
+  margin: 35px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2em
+}
+
+.feedback-card img{
+  height: 50px;
+}
+
+.arrow{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter{
+  margin: 80px 0 0 0;
+  background-color: #FFEFEC;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px 0;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+.newsletter .input-div{
+  background-color: #F6F6F6;
+  height: 53px;
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 56px;
+}
+
+.newsletter input{
+  width: 60%;
+  margin-left: 9px;
+  border: 0;
+  background-color: #F6F6F6;
+}
+
+
+ul{
+  list-style: none;
+}
+
+.footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #fff;
+  overflow: hidden;
+  margin: 0;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 100px;
+}
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 230px;
+}
+
+.footer-logo a img{
+  height: 40px;
+}
+
+.footer-top .head{
+  color: #fff;
+  font-size: 17.756px;
+  padding-bottom: 5px;
+
+}
+
+.footer-top li{
+color: #B5B2B2;
+}
+.foter-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 50px;
+  flex-wrap: wrap;
+}
+
+.foter-bottom div{
+  margin: auto;
+}
+
+.foter-bottom div ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 @media (max-width: 768px) {
   .navbar{
     flex-direction: column;
+    width: 90%;
+    margin: auto;
   }
   .navbar-menu, .navbar-buttons {
     display: none;
@@ -301,6 +419,7 @@ body, html {
 
   .navbar-menu.active, .navbar-buttons.active {
     display: flex;
+    flex-direction: column;
   }
 
   .navbar-menu a {
@@ -315,4 +434,92 @@ body, html {
   .hamburger {
     display: block;
   }
+
+  .order-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.banner{
+  flex-direction: column;
+}
+
+.banner .banner-text{
+  width: 100%;
+  text-align: center;
+  gap: 30px;
+}
+
+.banner-text .input-div, .banner-text .banner-app{
+  margin: 10px auto;
+}
+
+.banner-img{
+  width: 90%;
+  margin: 10px auto;
+}
+
+.banner-img img{
+height: 300px;
+}
+
+
+.food{
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.order-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.option-card{
+  width: 100%;
+}
+
+.food-bottom{
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+  .newsletter{
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .newsletter .input-div{
+    width: 50%;
+  }
+  
+  .footer-top div{
+    margin-right: 30px;
+  }
+  .footer-logo{
+    align-items: center;
+  }
+  .footer-bottom{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+  }
+
+  .foter-bottom div ul {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 }
